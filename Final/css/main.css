@@ -58,12 +58,14 @@ blockquote.pullquote {
  font-size: 3.5em;
 font-family: 'FontleroyBrownRegular','Harrington',Serif;
 width: 3em;
-line-height: .9em;
+line-height: .7em;
 float: left;
 display: block;
 color:#c00;text-align:right;
-margin: .25em .5em .25em 0;
+padding: .25em .5em .25em 0;
+background:#fff;
 border:none;}
+blockquote.pullquote.right{float:right; text-align: left;padding: .25em 0 .25em .5em;}
 .row {
  border-bottom:1px solid #ccc;
  padding: 1em 0;
@@ -80,7 +82,7 @@ margin:1em 0 0 0;
 padding: 2em 0 0 0;
 }
 p:not(.button-wrap) {text-indent: 1.5em; position:relative;}
-img {box-shadow:0 0 .75em rgba(0,0,0,.3); border:5px solid #fff; }
+img { border:5px solid #fff; }
 @media (max-width: 480px){
   body {padding:0;}
   .hero-unit {
