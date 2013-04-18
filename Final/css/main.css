@@ -66,7 +66,7 @@ padding: .25em .5em .25em 0;
 background:#fff;
 border:none;}
 blockquote.pullquote.right{float:right; text-align: left;padding: .25em 0 .25em .5em;}
-.row {
+.row {text-align:center;
  border-bottom:1px solid #ccc;
  padding: 1em 0;
  position:relative;
@@ -81,8 +81,8 @@ display:block;
 margin:1em 0 0 0; 
 padding: 2em 0 0 0;
 }
-p:not(.button-wrap) {text-indent: 1.5em; position:relative;}
-img { border:5px solid #fff; }
+p:not(.button-wrap) {text-indent: 1.5em; position:relative; text-align:left;}
+img { border:5px solid #fff; display:inline-block;}
 @media (max-width: 480px){
   body {padding:0;}
   .hero-unit {
@@ -95,7 +95,7 @@ img { border:5px solid #fff; }
 
 @media (min-width: 481px){
   body {padding:0;}
-  .col2 {
+  .row {
   
 column-count: 2;
 column-gap:1em;
@@ -112,10 +112,11 @@ column-rule: 1px solid #ccc;
 #intro.hero-unit h1 {font-size:5em; line-height: .7em;}
 .hero-unit h2 {font-size:3em;}
   #intro h2 small {margin: .5em 0 0 0;}
+  blockquote.pullquote{float:none; text-align: left; width:auto; font-size: 5em;}
 }
 @media (min-width:768px){
   .row {
-  /* column-count: 3;
+   column-count: 3;
   column-gap:1em;
   column-rule: 1px solid #ccc;
   -webkit-column-count: 3;
@@ -123,7 +124,7 @@ column-rule: 1px solid #ccc;
   -webkit-column-rule: 1px solid #ccc;
   -moz-column-count: 3;
   -moz-column-gap:1em;
-  -moz-column-rule: 1px solid #ccc; */
+  -moz-column-rule: 1px solid #ccc; 
 }
 #intro.hero-unit h1 {font-size:6em;}
 .hero-unit h2 {font-size:4em;}

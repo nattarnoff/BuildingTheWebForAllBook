@@ -16,4 +16,17 @@ var PullTheQuotes = function(){
 
 $(function(){
 	PullTheQuotes();
+	$(document).scroll(function(){
+var elem = $('.navbar');
+if (!elem.attr('data-top')) {
+    if (elem.hasClass('navbar-fixed-top'))
+        return;
+     var offset = elem.offset()
+    elem.attr('data-top', offset.top);
+}
+if (elem.attr('data-top') <= $(this).scrollTop() )
+    elem.addClass('navbar-fixed-top');
+else
+    elem.removeClass('navbar-fixed-top');
+});
 })
