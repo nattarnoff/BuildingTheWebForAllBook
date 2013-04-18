@@ -13,7 +13,7 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body {background: url('../img/floor.jpg') bottom center repeat-x, url('../img/wall.jpg') top left repeat;}
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0); 
@@ -27,18 +27,23 @@
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
   /* width:100%; */
 }
-section{ 
+section[class*="span"]{ 
+  background:#fefefe;
+  margin: .25em 0;
+  float:none;
+  -webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+box-shadow:0 0 .75em rgba(0,0,0,.3);
+padding: 1em 0 0 0;
 }
+section>.row {margin: 1em;}
+section>h2 {margin: 0 .5em; line-height: 1em;}
 .hero-unit {
-  /* background:#fefefe;
-  border-radius:0;
-  -webkit-border-radius:0;
-  -moz-border-radius:0;
-  margin: 0;
-  border-top:1px solid #fff;
-  border-bottom:1px solid #efefef; */
+  padding: .25em 1.5em;
+  margin-bottom:.25em;
 }
-.hero-unit h1, h2 {font-family: 'FontleroyBrownRegular','Harrington',Serif;  font-weight:normal; margin: 0; letter-spacing: 0; line-height:20px; color:#c00; font-size:4em;}
+.hero-unit h1, h2 {font-family: 'FontleroyBrownRegular','Harrington',Serif;  font-weight:normal; letter-spacing: -1; line-height:20px; color:#c00; font-size:4em;}
  .hero-unit h1 {font-size:6em;}
 #intro {
   background:url('../img/roses.jpg') top left no-repeat;
@@ -46,15 +51,25 @@ section{
   color:#fefefe;
 }
 #intro h1, #intro h2 {color:#fff; clear:both; margin: .5em 0; line-height: .3em; text-shadow:.02em .05em .15em rgba(0,0,0,.7);}
-#intro h2 small {color:#ddd; font-size: .5em;}
+#intro h2 small {color:#dfdfdf; font-size: .5em;}
 .content {position:relative; 
 top:-19px;}
+blockquote.pullquote {
+ font-size: 3.5em;
+font-family: 'FontleroyBrownRegular','Harrington',Serif;
+width: 3em;
+line-height: .9em;
+float: left;
+display: block;
+color:#c00;text-align:right;
+margin: .25em .5em .25em 0;
+border:none;}
 .row {
-clear:both;
  border-bottom:1px solid #ccc;
  padding: 1em 0;
  position:relative;
-}
+margin-left:0;}
+ 
 .row:after {clear:none;}
 header .navbar-inner .container {width:90%;}
 p:first-child:first-letter {font-family: 'FontleroyBrownRegular','Harrington',Serif; line-height:1em;
@@ -65,7 +80,7 @@ margin:1em 0 0 0;
 padding: 2em 0 0 0;
 }
 p:not(.button-wrap) {text-indent: 1.5em; position:relative;}
-
+img {box-shadow:0 0 .75em rgba(0,0,0,.3); border:5px solid #fff; }
 @media (max-width: 480px){
   body {padding:0;}
   .hero-unit {
