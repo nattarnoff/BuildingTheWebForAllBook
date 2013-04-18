@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'FontleroyBrownRegular';
+    src: url('../fonts/FontleroyBrown-webfont.eot');
+    src: url('../fonts/FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FontleroyBrown-webfont.woff') format('woff'),
+         url('../fonts/FontleroyBrown-webfont.ttf') format('truetype'),
+         url('../fonts/FontleroyBrown-webfont.svg#FontleroyBrownRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; /* Prevent any content overflow */
+    padding: 0; 
+    position: absolute; /* Remove from the flow of the document */
+    width: 1px;
+}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width:100%;
+}
+section{ 
+}
+.hero-unit {
+  background:#fefefe;
+  border-radius:0;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  margin: 0;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #efefef;
+}
+.hero-unit h1, .hero-unit h2 {font-family: 'FontleroyBrownRegular','Harrington',Serif;  font-weight:normal; margin: 0; letter-spacing: 0; line-height:20px; color:#c00; font-size:4em;}
+ .hero-unit h1 {font-size:6em;}
+#intro {
+  background:url('../img/roses.jpg') top left no-repeat;
+  background-size:cover;
+  color:#fefefe;
+}
+#intro h1, #intro h2 {color:#fff; clear:both; margin: .5em 0; line-height: .3em; text-shadow:.02em .05em .15em rgba(0,0,0,.7);}
+#intro h2 small {color:#ddd; font-size: .5em;}
+.content {position:relative; 
+top:-19px;}
+.row {
+  clear:both;
+  border-bottom:1px solid #ccc;
+  padding: 1em 0;
+  position:relative;
+}
+header .navbar-inner .container {width:90%;}
+p:first-child:first-letter {font-family: 'FontleroyBrownRegular','Harrington',Serif; line-height:1em;
+font-size:4em; top:1em; position:relative;display:block;margin:1em 0 0 0; padding: 2em 0 0 0;}
+p:not(.button-wrap) {text-indent: 1.5em; position:relative;}
+
+@media (max-width: 480px){
+  body {padding:0;}
+  .hero-unit {
+    padding: 1em;
+  }
+  #intro.hero-unit h1 {font-size:3.5em;}
+  .hero-unit h2 {font-size:2.5em;}
+  #intro h2 small {clear:both; display:block; margin: .25em 0 0 0; font-size:.9em;}
+}
+
+@media (min-width: 481px){
+  body {padding:0;}
+  .row {
+  
+  column-count: 2;
+  column-gap:1em;
+  column-rule: 1px solid #ccc;
+  -webkit-column-count: 2;
+  -webkit-column-gap:1em;
+  -webkit-column-rule: 1px solid #ccc;
+  -moz-column-count: 2;
+  -moz-column-gap:1em;
+  -moz-column-rule: 1px solid #ccc;
+  
+}
+#intro.hero-unit h1 {font-size:5em; line-height: .7em;}
+.hero-unit h2 {font-size:3em;}
+  #intro h2 small {margin: .5em 0 0 0;}
+}
+@media (min-width:768px){
+  .row {
+  column-count: 3;
+  column-gap:1em;
+  column-rule: 1px solid #ccc;
+  -webkit-column-count: 3;
+  -webkit-column-gap:1em;
+  -webkit-column-rule: 1px solid #ccc;
+  -moz-column-count: 3;
+  -moz-column-gap:1em;
+  -moz-column-rule: 1px solid #ccc;
+}
+#intro.hero-unit h1 {font-size:6em;}
+.hero-unit h2 {font-size:4em;}
+  #intro h2 small {clear:none; display:inline; font-size:.7em;}
+}
+
+
+
+
+
+
+
+
+
+
