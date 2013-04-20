@@ -34,7 +34,16 @@ $(function(){
 		});
 
 	});
-	
+	$('.expand').click(function(e){
+    e.preventDefault();
+    if($('.transcript').hasClass('visuallyhidden')){
+      $('.transcript').removeClass('visuallyhidden');
+      $('#expandcollapse').text("-");
+    } else {
+      $('.transcript').addClass('visuallyhidden');
+      $('#expandcollapse').text("+");
+    }
+  })
 	$(document).scroll(function(){
 var elem = $('.navbar');
 if (!elem.attr('data-top')) {
