@@ -96,9 +96,14 @@ section>h2 {
 .hero-unit h1 {
   font-size:6em;
 }
-
+.navbar-inverse .brand, .navbar-inverse .nav > li > a, .form-search label {
+  color:#fefefe;
+}
+.navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .brand:focus, .navbar-inverse .nav > li > a:focus  {
+  text-decoration:underline;
+}
 .intro {
-  background:url('../img/roses.jpg') top left no-repeat;
+  background:url('../img/roses.jpg') top left no-repeat #c00;
   background-size:cover;
   color:#fefefe;
 }
