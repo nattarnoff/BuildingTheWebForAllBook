@@ -10,3 +10,6 @@ Organized by steps/chapters
 4. CSS
 5. Behavior
 
+To Do:
+Presentation - 1 slide per comment/code base - add notes
+Presentation to book
