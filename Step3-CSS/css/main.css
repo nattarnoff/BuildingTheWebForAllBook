@@ -16,12 +16,6 @@
 * {
   box-sizing:border-box;
 }
-body {
-  background: url('../img/floor.jpg') bottom center repeat-x, 
-              url('../img/wall.jpg') top left repeat;
-  padding:0;
-  position:relative;
-}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0); 
@@ -31,6 +25,22 @@ body {
   padding: 0; 
   position: absolute; /* Remove from the flow of the document */
   width: 1px;
+}
+
+body {
+  background: url('../img/floor.jpg') bottom center repeat-x, 
+              url('../img/wall.jpg') top left repeat;
+  padding:0;
+  position:relative;
+}
+.readable { 
+  background:#fefefe;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: .25em;
+  margin-top: .5em;
+  box-shadow:0 0 .25em rgba(0,0,0,.9);
 }
 
 .gallery li {
@@ -59,15 +69,7 @@ body {
   position:relative;
   
 }
-.readable { 
-  background:#fefefe;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  padding: .25em;
-  margin-top: .5em;
-  box-shadow:0 0 .25em rgba(0,0,0,.9);
-}
+
 section a {
   text-decoration:underline;
 }

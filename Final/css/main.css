@@ -92,7 +92,10 @@ section>h2 {
   color:#c00; 
   font-size:4em;
 }
-
+.warning {
+  display:none;
+  /*visibility: hidden;*/
+}
 .hero-unit h1 {
   font-size:6em;
 }

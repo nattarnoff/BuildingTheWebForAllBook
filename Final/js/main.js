@@ -13,11 +13,20 @@ var PullTheQuotes = function(){
 		
 	 };
 }
+/* Hide the lightbox */
 var killDialog= function(){
 	$('.dialog').fadeOut('slow').delay(500).remove();
 }
+
 $(function(){
+	/* Submit the form and trigger error */
+	$('#submit').click(function(e){
+		e.preventDefault();
+		$('.warning').fadeIn();
+	});
+	/* Display pull quotes */
 	PullTheQuotes();
+	/* Show the lightbox */
 	$('.gallery a img').click(function(e){
 		if($('.dialog')){killDialog();}
 		e.preventDefault();
@@ -34,6 +43,7 @@ $(function(){
 		});
 
 	});
+	/*Expand the transcript*/
 	$('.expand').click(function(e){
     e.preventDefault();
     if($('.transcript').hasClass('visuallyhidden')){
@@ -44,17 +54,18 @@ $(function(){
       $('#expandcollapse').text("+");
     }
   })
+	/*scrolling with sticky nav */
 	$(document).scroll(function(){
-var elem = $('.navbar');
-if (!elem.attr('data-top')) {
-    if (elem.hasClass('navbar-fixed-top'))
-        return;
-     var offset = elem.offset()
-    elem.attr('data-top', offset.top);
-}
-if (elem.attr('data-top') <= $(this).scrollTop() )
-    elem.addClass('navbar-fixed-top');
-else
-    elem.removeClass('navbar-fixed-top');
+		var elem = $('.navbar');
+		if (!elem.attr('data-top')) {
+		    if (elem.hasClass('navbar-fixed-top'))
+		        return;
+		     var offset = elem.offset()
+		    elem.attr('data-top', offset.top);
+		}
+		if (elem.attr('data-top') <= $(this).scrollTop() )
+		    elem.addClass('navbar-fixed-top');
+		else
+		    elem.removeClass('navbar-fixed-top');
+		});
 });
-})
