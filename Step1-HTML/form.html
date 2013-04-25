@@ -183,22 +183,19 @@
                     <form action="#" class="span5 readable">
                         <fieldset>
                         <legend>Sign Up!</legend>
-                            <ul>
-                                <li>
-                                    <label for="firstname">First Name:</label>
-                                    <input type="text" name="firstname" id="firstname" placeholder="What do people call you?" />
-                                </li>
-                                <li>
-                                    <label for="lastname">Last Name:</label>
-                                    <input type="text" name="lastname" id="lastname" placeholder="This is also your surname" />
-                                </li>
-                                <li>
-                                    <label for="email">Email Address:</label>
-                                    <input type="email" name="email" id="email" placeholder="someone@email.com" />
-                                </li>
-                                <li>     
-                                    <input type="submit" value="Submit" id="submit" class="btn btn-success">
-                                </li>
+                        <div class="warning alert alert-error" role="alert" aria-live="assertive">Please enter a valid email address.</div>
+                        <ul>
+                            <li><label for="firstname">First Name:</label><input type="text" name="firstname" id="firstname" placeholder="What do people call you?" /></li>
+                            <li><label for="lastname">Last Name:</label><input type="text" name="lastname" id="lastname" placeholder="This is also your surname" /></li>
+                            <li><label for="email">Email Address:</label><input type="email" name="email" id="email" placeholder="someone@email.com" /> </li>
+                            <li><labelid="radiogroup">Do you like nachos?</label>
+                                <div class="radio" aria-labelledby="radiogroup">
+                                    <input type="radio" id="yes" name="nachos" ><label for="yes" role="button" aria-pressed="false">Yes</label>
+                                    <input type="radio" id="no" name="nachos"><label for="no" role="button" aria-pressed="false">No</label>
+                                    <input type="radio" id="maybe" name="nachos"><label for="maybe" role="button" aria-pressed="false">Maybe</label>
+                                </div>
+                            </li>
+                            <li><input type="submit" value="Submit" id="submit" class="btn btn-success" role="button"></li>
                             </ul>
                         </fieldset>
                     </form>

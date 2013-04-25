@@ -147,11 +147,16 @@
 <section id="trailer">
     <h2 class="readable">Trailer for Disney's 2010 Alice in Wonderland</h2>
     <div class="row">
-        <video class="span12 readable" poster="img/Alice-in-Wonderland.jpg" controls tabindex="0">
+        <video class="span12 readable" poster="img/Alice-in-Wonderland.jpg" controls tabindex="0" title="Alice in Wonderland">
             <source  src="media/Alice-in-Wonderland.m4v" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+            <source  src="media/Alice-in-Wonderland.ogg" type='application/ogg' />
+            <source  src="media/Alice-in-Wonderland.webm" type='video/webm' />
             <track src="media/trailer-transcript.vtt" label="English Subtitles" kind="subtitles" srclang="en-us" default />
         </video>
     
+    
+
+
         <span class="span12 readable">
         <h3><a href="#" class="expand">Transcript <span id="expandcollapse">+</span></a></h3>
         <span class="transcript visuallyhidden">
@@ -191,14 +196,21 @@
             <ul>
                 <li><label for="firstname">First Name:</label><input type="text" name="firstname" id="firstname" placeholder="What do people call you?" /></li>
                 <li><label for="lastname">Last Name:</label><input type="text" name="lastname" id="lastname" placeholder="This is also your surname" /></li>
-                <li><label for="email">Email Address:</label><input type="email" name="email" id="email" placeholder="someone@email.com" /> <input type="submit" value="Submit" id="submit" class="btn btn-success"></li>
-                <li></li>
+                <li><label for="email">Email Address:</label><input type="email" name="email" id="email" placeholder="someone@email.com" /> </li>
+                <li><labelid="radiogroup">Do you like nachos?</label>
+                    <div class="radio" aria-labelledby="radiogroup">
+                        <input type="radio" id="yes" name="nachos" ><label for="yes" role="button" aria-pressed="false">Yes</label>
+                        <input type="radio" id="no" name="nachos"><label for="no" role="button" aria-pressed="false">No</label>
+                        <input type="radio" id="maybe" name="nachos"><label for="maybe" role="button" aria-pressed="false">Maybe</label>
+                    </div>
+                </li>
+                <li><input type="submit" value="Submit" id="submit" class="btn btn-success" role="button"></li>
                 </ul>
             </fieldset>
         </form>
         <div class="span7 readable">
             <h3>Thank You For Your Interest</h3>
-            <p>However, this site is currently just for a demonstration. Filling int he form to the left and clicking submit will not actually do anything. </p>
+            <p>However, this site is currently just for a demonstration. Filling in the form to the left and clicking submit will not actually do anything. </p>
             <p>If you would like to get ahold of me, you can do so by visiting my website at <a href="http:///www.tarnoff.info">www.tarnoff.info</a>. You can also help support projects like this by purchasing a set of stickers from my website.</p>
         </div>
     </div>

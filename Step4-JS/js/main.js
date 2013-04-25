@@ -34,15 +34,21 @@ $(function(){
 		// console.log(object);
 		var src = $(this).attr('src');
 		var alt = $(this).attr('alt');
-		var dialog = "<div class='dialog' role='dialog' aria-live='polite'><a href='#' class='close'>&times;<span class='visuallyhidden'>Close</span></a><img src='"+src+"' alt='"+alt+"' /></div>";
+		var dialog = "<div class='dialog' role='alertdialog' aria-live='polite'><a href='#' class='close'>&times;<span class='visuallyhidden'>Close</span></a><img src='"+src+"' alt='"+alt+"' /></div>";
 		$('body').append(dialog);
 		$('.dialog').fadeIn('slow');
 		$('.dialog > .close').on("click", function(e){
 			e.preventDefault();
 			killDialog();
 		});
-
+		$('body').keyup(function(e){
+			// console.log('Clicked escape: '+e.which);
+			if(e.which == 27){
+				killDialog();
+			}
+		});
 	});
+	
 	/*Expand the transcript*/
 	$('.expand').click(function(e){
     e.preventDefault();
