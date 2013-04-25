@@ -64,10 +64,14 @@ body {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  padding: .25em;
+  /* padding: .25em; */
   margin-top: .5em;
   box-shadow:0 0 .25em rgba(0,0,0,.9);
 }
+.readable>* {
+  margin:.25em;
+}
+
 section a {
   text-decoration:underline;
 }
@@ -190,7 +194,10 @@ p:not(.button-wrap) {
   position:relative; 
   text-align:left;
 }
-.transcript{}
+.readable > p {
+  margin: .25em 1em;
+}
+
 img { 
   border:5px solid #fff; 
   display:inline-block;
